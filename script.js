@@ -172,7 +172,7 @@ if (yellowPopup) {
 
   const randomDelay =
     Math.floor(
-      Math.random() * (50000 - 10000 + 1)
+      Math.random() * (500000 - 100000 + 1)
     ) + 1000;
 
 
