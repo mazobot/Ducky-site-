@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Personal portfolio of a young developer and robotics enthusiast."
+  >
+  <title>Mazobot | Developer and robotics enthusiast</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-grid"></div>
+
+  <header class="navbar">
+    <a class="logo" href="#home">;</a>
+    <button
+      class="menu-toggle"
+      aria-label="Open navigation"
+    >
+    Menu
+    </button>
+
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button
+      id="theme-toggle"
+      class="theme-toggle"
+      aria-label="Toggle theme"
+    >
+    Theme
+    </button>
+
+  </header>
+
+  <main>
+
+    <section id="home" class="hero section">
+
+      <div class="hero-content reveal">
+        <p class="eyebrow">
+          <span class="status-dot"></span>
+          Still figuring things out
+        </p>
+
+      <h1>
+        <span class="rainbow-hi">Hi, I'm</span>
+        <span class="gradient-text">Mazobot</span>
+      </h1>
+
+        <h2>
+          I build websites, test ideas and learn by breaking things.
+        </h2>
+
+        <div class="hero-buttons">
+          <a
+            class="button primary"
+            href="#projects"
+          >
+          See what I made
+          </a>
+
+          <a
+            class="button secondary"
+            href="#contact"
+          >
+          Say hello
+          </a>
+
+        </div>
+
+        <div class="quick-stats">
+          <div>
+            <strong>10+</strong>
+            <span>Projects</span>
+          </div>
+
+          <div>
+            <strong>A few</strong>
+            <span>Ideas</span>
+          </div>
+
+          <div>
+            <strong>Always</strong>
+            <span>Learning</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="terminal reveal">
+        <div class="terminal-bar">
+          <span></span>
+          <span></span>
+          <span></span>
+          <small>portfolio.js</small>
+        </div>
+
+        <pre><code><span class="purple">const</span> mazobot = {
+  focus: <span class="yellow">"web & robotics"</span>,
+  tools: [<span class="yellow">"JavaScript"</span>, <span class="yellow">"Arduino"</span>, <span class="yellow">"C/C++"</span>],
+  mindset: <span class="yellow">"learn by making"</span>,
+  goal: <span class="yellow">"build something useful"</span>,
+  status: <span class="green">"building..."</span>
+}</code></pre>
+      </div>
+
+    </section>
+
+    <section id="about" class="section">
+
+      <div class="section-heading reveal">
+        <span>01</span>
+        <h2>About me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="avatar">
+            YN
+          </div>
+
+          <h3>Curious by default</h3>
+          <p>
+            I like making things that I can click, test,
+            rebuild and understand.
+          </p>
+
+          <p>
+            Right now I spend most of my time on websites,
+            JavaScript and small electronics experiments.
+          </p>
+
+          <p>
+            I do not have everything figured out yet, but I keep
+            learning and finishing the next small project.
+          </p>
+
+        </div>
+
+        <div class="timeline reveal">
+          <div class="timeline-item">
+            <span>01</span>
+            <div>
+              <h3>Web development</h3>
+              <p>
+                Making small websites and figuring out
+                why the CSS broke this time.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="timeline-item">
+            <span>02</span>
+            <div>
+              <h3>Robotics</h3>
+              <p>
+                Learning how motors, sensors and
+                microcontrollers actually work together.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="timeline-item">
+            <span>03</span>
+            <div>
+              <h3>Amateur engineering</h3>
+              <p>
+                Trying circuits, batteries and embedded code
+                without setting anything on fire.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="projects" class="section">
+
+      <div class="section-heading reveal">
+        <span>02</span>
+        <h2>Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-number">
+            01
+          </div>
+
+          <div class="project-icon">
+            WEB
+          </div>
+
+          <h3>
+            Web OS
+          </h3>
+          <p>
+            A browser desktop I made to practice layouts,
+            windows and small interactions.
+          </p>
+
+          <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+
+          <a
+            href="#"
+            class="project-link"
+          >
+          Open notes
+          </a>
+
+        </article>
+
+        <article class="project-card featured reveal">
+          <div class="project-number">
+            02
+          </div>
+
+          <div class="project-icon">
+            BOT
+          </div>
+
+          <h3>
+            Autonomous Robot
+          </h3>
+          <p>
+            A robot idea involving motors, sensors and a
+            microcontroller. Still very much a work in progress.
+          </p>
+
+          <div class="tags">
+            <span>STM32</span>
+            <span>Arduino</span>
+            <span>Robotics</span>
+          </div>
+
+          <a
+            href="#"
+            class="project-link"
+          >
+          Open notes
+          </a>
+
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-number">
+            03
+          </div>
+
+          <div class="project-icon">
+            LAB
+          </div>
+
+          <h3>
+            Electronics Lab
+          </h3>
+          <p>
+            Notes and experiments with LEDs, sensors,
+            batteries and the occasional confusing wire.
+          </p>
+
+          <div class="tags">
+            <span>Electronics</span>
+            <span>Embedded</span>
+            <span>Hardware</span>
+          </div>
+
+          <a
+            href="#"
+            class="project-link"
+          >
+          Open notes
+          </a>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <section id="skills" class="section">
+
+      <div class="section-heading reveal">
+        <span>03</span>
+        <h2>
+          Skills & technologies
+        </h2>
+
+      </div>
+
+      <div class="skills-layout">
+        <div class="skills-list reveal">
+          <div class="skill">
+            <div>
+              <span>HTML / CSS</span>
+              <b>90%</b>
+            </div>
+
+            <div class="progress">
+              <i style="width:90%"></i>
+            </div>
+
+          </div>
+
+          <div class="skill">
+            <div>
+              <span>JavaScript</span>
+              <b>75%</b>
+            </div>
+
+            <div class="progress">
+              <i style="width:75%"></i>
+            </div>
+
+          </div>
+
+          <div class="skill">
+            <div>
+              <span>Arduino / Embedded</span>
+              <b>70%</b>
+            </div>
+
+            <div class="progress">
+              <i style="width:70%"></i>
+            </div>
+
+          </div>
+
+          <div class="skill">
+            <div>
+              <span>Robotics</span>
+              <b>65%</b>
+            </div>
+
+            <div class="progress">
+              <i style="width:65%"></i>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="tech-cloud reveal">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Git</span>
+          <span>GitHub</span>
+          <span>Arduino</span>
+          <span>STM32</span>
+          <span>KiCad</span>
+          <span>C/C++</span>
+          <span>Robotics</span>
+          <span>Electronics</span>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="contact" class="section contact-section">
+
+      <div class="section-heading reveal">
+        <span>04</span>
+        <h2>
+          Let's connect
+        </h2>
+
+      </div>
+
+      <div class="contact-card reveal">
+        <div>
+          <p class="eyebrow">
+            Found something interesting?
+          </p>
+
+          <h2>
+            Send me a message.
+          </h2>
+
+          <p>
+            I'm still learning, but I like talking about
+            interesting projects, robots and weird little ideas.
+          </p>
+
+        </div>
+
+        <div class="contact-buttons">
+          <span class="slack-contact">
+            Find me on Slack:
+          <strong>mazobot</strong>
+          </span>
+        <a
+          class="button secondary"
+          href="https://github.com/"
+          target="_blank"
+          rel="noopener"
+        >   
+        GitHub
+       </a>
+
+      </div>
+
+    </div>
+
+        </section>
+
+        </main>
+
+          <footer>
+            <p>
+              (c) <span id="year"></span> Mazobot
+            </p>
+
+            <p>
+              Built with HTML, CSS & JavaScript.
+            </p>
+
+            </footer>
+
+            <div id="yellow-popup" aria-hidden="true">
+            <img id="yellow-image" src="images/Yellow.webp" alt="Yellow">
+            <button id="yellow-close" type="button" aria-label="Close popup">×</button>
+          </div>
+
+  <script src="script.js"></script>
+</body> 
