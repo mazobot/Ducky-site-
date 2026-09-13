@@ -1,22 +1,22 @@
 # Mazobot Portfolio
 
-Osobiste portfolio pokazujące moje zainteresowania w web developmentem, JavaScriptem, elektroniką i robotyką.
+Personal portfolio showing my interests in web development, JavaScript, electronics and robotics.
 
-## O projekcie
+## About the project
 
-Strona została zbudowana bez frameworków. Jest miejscem na prezentację projektów, umiejętności i aktualnych eksperymentów.
+This website was built without a framework. It is a place to present my projects, skills and current experiments.
 
-W projekcie znajdują się między innymi:
+The project includes:
 
-- responsywny układ na komputer i telefon,
-- sekcja o mnie, projekty, umiejętności i kontakt,
-- animowane elementy pojawiające się podczas przewijania,
-- terminal `portfolio.js`,
-- przełącznik dark mode / light mode z zapamiętywaniem ustawienia,
-- losowo pojawiające się okienko z obrazkiem,
-- tło i grafiki przechowywane w folderze `images`.
+- responsive layout for desktop and mobile,
+- about, projects, skills and contact sections,
+- animated elements revealed while scrolling,
+- an interactive `portfolio.js` terminal,
+- a dark mode / light mode switch with saved preferences,
+- a randomly appearing image popup,
+- background images and other graphics stored in the `images` folder.
 
-## Technologie
+## Technologies
 
 - HTML5
 - CSS3
@@ -24,25 +24,25 @@ W projekcie znajdują się między innymi:
 - Google Fonts
 
 
-## Struktura projektu
+## Project structure
 
 ```text
 spidersite/
-├── index.html       # Struktura strony
-├── style.css        # Wygląd, responsywność i motywy
-├── script.js        # Interakcje i animacje
-├── images/          # Obrazki używane na stronie
-└── README.md        # Informacje o projekcie
+├── index.html       # Page structure
+├── style.css        # Styling, responsiveness and themes
+├── script.js        # Interactions and animations
+├── images/          # Images used on the website
+└── README.md        # Project information
 ```
 
-## Personalizacja
+## Customization
 
-Najważniejsze treści można zmienić bezpośrednio w `index.html`.
+The main content can be changed directly in `index.html`.
 
-- kolory i układ: `style.css`,
-- zachowanie przycisków i popupu: `script.js`,
-- grafiki: folder `images`.
+- colors and layout: `style.css`,
+- button and popup behavior: `script.js`,
+- graphics: the `images` folder.
 
 ## Status
 
-Projekt jest na razie skończony.
+The project is currently finished.
