@@ -3,9 +3,9 @@ const themeToggle =document.getElementById("theme-toggle");
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks =document.querySelector(".nav-links");
 const year =document.getElementById("year");
-const yellowPopup = document.getElementById('yellow-popup');
-const yellowImage = document.getElementById('yellow-image');
-const yellowClose = document.getElementById('yellow-close');
+const duckPopup = document.getElementById('duck-popup');
+const duckImage = document.getElementById('duck-image');
+const duckClose = document.getElementById('duck-close');
 
 
 
@@ -131,7 +131,7 @@ document
 
 const terminalStatus =
   document.querySelector(
-    ".terminal .green:last-child"
+    ".duck-terminal .green:last-child"
   );
 
 
@@ -163,7 +163,7 @@ if (terminalStatus) {
 
 }
 
-if (yellowPopup) {
+if (duckPopup) {
 
   const randomDelay =
     Math.floor(
@@ -171,35 +171,35 @@ if (yellowPopup) {
     ) + 10000;
 
 
-  if (yellowClose) {
-    yellowClose.addEventListener(
+  if (duckClose) {
+    duckClose.addEventListener(
       "click",
       () => {
 
-        yellowPopup.classList.remove("show");
-        yellowPopup.setAttribute("aria-hidden", "true");
+        duckPopup.classList.remove("show");
+        duckPopup.setAttribute("aria-hidden", "true");
 
       }
     );
   }
 
-  function showYellowRandomly() {
+  function showDuckRandomly() {
     const margin = 16;
-    const popupWidth = yellowPopup.offsetWidth || 200;
-    const popupHeight = yellowPopup.offsetHeight || 200;
+    const popupWidth = duckPopup.offsetWidth || 200;
+    const popupHeight = duckPopup.offsetHeight || 200;
     const x = margin + Math.random() * Math.max(0, window.innerWidth - popupWidth - margin * 2);
     const y = margin + Math.random() * Math.max(0, window.innerHeight - popupHeight - margin * 2);
 
-    yellowPopup.style.left = `${x}px`;
-    yellowPopup.style.top = `${y}px`;
-    yellowPopup.style.right = "auto";
-    yellowPopup.style.bottom = "auto";
-    yellowPopup.classList.add("show");
-    yellowPopup.setAttribute("aria-hidden", "false");
+    duckPopup.style.left = `${x}px`;
+    duckPopup.style.top = `${y}px`;
+    duckPopup.style.right = "auto";
+    duckPopup.style.bottom = "auto";
+    duckPopup.classList.add("show");
+    duckPopup.setAttribute("aria-hidden", "false");
 
-    setTimeout(showYellowRandomly, 10000 + Math.random() * 40000);
+    setTimeout(showDuckRandomly, 10000 + Math.random() * 40000);
   }
 
-  setTimeout(showYellowRandomly, randomDelay);
+  setTimeout(showDuckRandomly, randomDelay);
 
 } 
