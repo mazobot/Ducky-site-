@@ -13,7 +13,7 @@ The project includes:
 - a randomly appearing image popup,
 - background images and other graphics stored in the `images` folder.
 
-## Used langues  and fonts
+## Used languages  and fonts
 - HTML5
 - CSS3
 - JavaScript
