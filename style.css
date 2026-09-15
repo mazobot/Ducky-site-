@@ -1,5 +1,11 @@
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@font-face {
+  font-family: 'The Magic Cookie';
+  src: url('The Magic Cookie.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root
 {
@@ -15,8 +21,8 @@
 --pink: #ff779d;
 --cyan: #8de8e3;
 
---mono: 'DM Mono', 'Courier New', monospace;
---main-font: 'Space Grotesk', sans-serif;
+--mono: 'The Magic Cookie', 'Courier New', monospace;
+--main-font: 'The Magic Cookie', sans-serif;
 }
 body.light
 {
@@ -41,6 +47,7 @@ body.light
 html
 {
 scroll-behavior: smooth;
+font-size: 19px;
 }
 body
 {
@@ -56,6 +63,8 @@ background-size: cover;
 background-attachment: fixed;
 background-repeat: no-repeat;
 font-family: var(--main-font);
+font-size: 1.05rem;
+line-height: 1.7;
 }
 body.light
 {
@@ -183,7 +192,7 @@ background: var(--yellow);
 max-width: 680px;
 margin-bottom: 22px;
 
-font: 700 clamp(3.6rem, 8vw, 7.1rem) / 0.88 var(--main-font);
+font: 700 clamp(4.4rem, 9vw, 8.5rem) / 0.88 var(--main-font);
 letter-spacing: -0.075em;
 }
 .rainbow-hi
@@ -198,10 +207,10 @@ color: var(--yellow);
 }
 .hero h2
 {
-max-width: 570px;
+max-width: 600px;
 
 color: var(--muted);
-font: 400 clamp(1.05rem, 2vw, 1.3rem) / 1.5 var(--main-font);
+font: 400 clamp(1.2rem, 2.2vw, 1.55rem) / 1.5 var(--main-font);
 }
 .hero-buttons,
 .contact-buttons
@@ -327,25 +336,40 @@ color: var(--cyan);
 
 .section-heading
 {
+position: relative;
 display: flex;
 align-items: baseline;
 gap: 15px;
 
 margin-bottom: 38px;
+padding-bottom: 10px;
 
-border-bottom: 1px solid var(--border);
+border-bottom: 1px solid rgba(255, 228, 92, 0.28);
+}
+.section-heading::after
+{
+content: "";
+position: absolute;
+left: 0;
+bottom: -1px;
+width: 130px;
+height: 2px;
+background: linear-gradient(90deg, var(--yellow), transparent);
+box-shadow: 0 0 18px rgba(255, 228, 92, 0.7);
 }
 .section-heading span
 {
 color: var(--orange);
 font: 0.75rem var(--mono);
+text-shadow: 0 0 10px rgba(255, 155, 69, 0.6);
 }
 .section-heading h2
 {
-padding-bottom: 13px;
+padding-bottom: 2px;
 
 font-size: clamp(2rem, 4vw, 3.2rem);
 letter-spacing: -0.06em;
+text-shadow: 0 0 18px rgba(141, 232, 227, 0.18);
 }
 /* about skills */
 
@@ -362,9 +386,12 @@ gap: 30px;
 .timeline-item,
 .tech-cloud
 {
-border: 1px solid var(--border);
+border: 1px solid rgba(255, 155, 69, 0.5);
 border-radius: 14px;
-background: rgba(23, 18, 53, 0.86);
+background: rgba(255, 155, 69, 0.02);
+box-shadow: inset 0 0 0 1px rgba(255, 155, 69, 0.12), 0 0 18px rgba(255, 155, 69, 0.06);
+backdrop-filter: none;
+padding: 18px 20px;
 }
 body.light .about-card,
 body.light .duck-project-card,
@@ -372,12 +399,18 @@ body.light .contact-card,
 body.light .timeline-item,
 body.light .tech-cloud
 {
-background: rgba(255, 250, 240, 0.92);
+border-color: rgba(88, 188, 232, 0.7);
+background: rgba(88, 188, 232, 0.04);
+box-shadow: inset 0 0 0 1px rgba(88, 188, 232, 0.14), 0 0 18px rgba(88, 188, 232, 0.06);
 }
 .about-card
 {
-padding: 29px;
-box-shadow: 0 15px 35px rgba(0, 0, 0, 0.14);
+padding: 18px 20px;
+box-shadow: inset 0 0 0 1px rgba(255, 155, 69, 0.12), 0 0 18px rgba(255, 155, 69, 0.06);
+}
+body.light .about-card
+{
+box-shadow: inset 0 0 0 1px rgba(88, 188, 232, 0.14), 0 0 18px rgba(88, 188, 232, 0.06);
 }
 .duck-avatar
 {
@@ -409,7 +442,8 @@ font-size: 1.35rem;
 {
 margin-bottom: 14px;
 color: var(--muted);
-line-height: 1.6;
+font-size: 1.2rem;
+line-height: 1.75;
 }
 .timeline
 {
@@ -422,7 +456,8 @@ gap: 12px;
 display: grid;
 grid-template-columns: 38px 1fr;
 gap: 15px;
-padding: 19px;
+padding: 18px 20px;
+border-bottom: 1px solid rgba(255, 228, 92, 0.18);
 }
 .timeline-item > span
 {
@@ -437,8 +472,8 @@ font-size: 1rem;
 {
 margin-top: 5px;
 color: var(--muted);
-font-size: 0.88rem;
-line-height: 1.45;
+font-size: 0.95rem;
+line-height: 1.55;
 }
 .projects-grid
 {
@@ -449,25 +484,25 @@ gap: 16px;
 .duck-project-card
 {
 position: relative;
-min-height: 330px;
-overflow: hidden;
-padding: 25px;
+min-height: 0;
+overflow: visible;
+padding: 18px 20px;
 
-transition: transform 0.2s, border-color 0.2s;
+transition: none;
 }
 .duck-project-card > *
 {
-position: relative;
-z-index: 1;
+position: static;
+z-index: auto;
 }
 .duck-project-card:hover
 {
-border-color: var(--yellow);
+border-color: rgba(255, 155, 69, 0.65);
 }
 .duck-project-card.featured
 {
-border-color: rgba(255, 228, 92, 0.55);
-background: var(--card-light);
+border-color: rgba(255, 155, 69, 0.7);
+background: rgba(255, 155, 69, 0.03);
 }
 .project-number
 {
@@ -499,7 +534,8 @@ font: 0.7rem var(--mono);
 .duck-project-card p
 {
 min-height: 98px;
-font-size: 0.89rem;
+font-size: 1.1rem;
+line-height: 1.7;
 }
 .tags
 {
@@ -511,13 +547,29 @@ margin: 20px 0;
 .tags span,
 .tech-cloud span
 {
-padding: 5px 8px;
+padding: 6px 12px;
 
-border: 1px solid var(--border);
-border-radius: 6px;
+border: none;
+border-radius: 999px;
 
-color: var(--cyan);
-font: 0.66rem var(--mono);
+color: #ffe45c;
+background: rgba(255, 228, 92, 0.12);
+box-shadow: 0 0 12px rgba(255, 228, 92, 0.18);
+font: 700 1rem/1.2 var(--mono);
+}
+body.light .tags span,
+body.light .tech-cloud span
+{
+color: #6a4ae3;
+background: rgba(133, 107, 235, 0.14);
+box-shadow: 0 0 12px rgba(108, 82, 210, 0.18);
+}
+body:not(.light) .tags span,
+body:not(.light) .tech-cloud span
+{
+color: #ffe45c;
+background: rgba(255, 228, 92, 0.12);
+box-shadow: 0 0 14px rgba(255, 228, 92, 0.32);
 }
 .project-link
 {
@@ -571,12 +623,33 @@ background: var(--yellow);
 display: flex;
 align-content: flex-start;
 flex-wrap: wrap;
-gap: 9px;
-padding: 24px;
+gap: 10px;
+padding: 18px 20px;
+background: rgba(255, 155, 69, 0.02);
+border: 1px solid rgba(255, 155, 69, 0.35);
+border-radius: 16px;
+box-shadow: inset 0 0 0 1px rgba(255, 155, 69, 0.08);
 }
 .tech-cloud span
 {
-padding: 8px 10px;
+padding: 6px 12px;
+background: rgba(255, 228, 92, 0.12);
+border: none;
+color: #ffe45c;
+box-shadow: 0 0 12px rgba(255, 228, 92, 0.18);
+font: 700 1rem/1.2 var(--mono);
+}
+body.light .tech-cloud
+{
+border-color: rgba(106, 74, 227, 0.4);
+background: rgba(106, 74, 227, 0.03);
+box-shadow: inset 0 0 0 1px rgba(106, 74, 227, 0.08);
+}
+body.light .tech-cloud span
+{
+color: #6a4ae3;
+background: rgba(133, 107, 235, 0.14);
+box-shadow: 0 0 12px rgba(108, 82, 210, 0.18);
 }
 .contact-section
 {
@@ -589,9 +662,9 @@ align-items: center;
 justify-content: space-between;
 gap: 30px;
 
-padding: 30px;
+padding: 18px 20px;
 
-background: var(--card-light);
+background: rgba(255, 155, 69, 0.02);
 }
 .contact-card h2
 {
@@ -602,16 +675,19 @@ letter-spacing: -0.06em;
 .contact-description
 {
 max-width: 570px;
+font-size: 1.25rem;
+line-height: 1.6;
 }
 .slack-contact
 {
 align-self: center;
 color: var(--muted);
-font: 0.76rem var(--mono);
+font: 2rem var(--mono);
 }
 .slack-contact strong
 {
 color: var(--yellow);
+font-size: 1.08em;
 }
 footer
 {
@@ -638,6 +714,28 @@ transition: opacity 0.6s ease, transform 0.6s ease;
 {
 opacity: 1;
 transform: translateY(0);
+}
+.duck-reveal
+{
+position: relative;
+padding: 14px 18px;
+border: 1px solid rgba(255, 155, 69, 0.5);
+border-radius: 14px;
+background: rgba(255, 155, 69, 0.02);
+box-shadow: inset 0 0 0 1px rgba(255, 155, 69, 0.12), 0 0 18px rgba(255, 155, 69, 0.05);
+}
+.duck-reveal::before
+{
+content: "";
+position: absolute;
+right: 20px;
+top: 50%;
+width: 18px;
+height: 18px;
+transform: translateY(-50%);
+border-radius: 50%;
+background: var(--yellow);
+box-shadow: 0 0 16px rgba(255, 228, 92, 0.8);
 }
 #duck-popup
 {
