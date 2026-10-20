@@ -1,4 +1,4 @@
- About the project
+## About the project
 This website was built  to present my projects, skills and current experiments and to show my interests in web development, JavaScript, electronics and robotics
 
 The project includes:
